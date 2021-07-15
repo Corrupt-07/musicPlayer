@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+<body>
+<div class="main">
+    </div>
+     <div class="container">
+        <div class="music_img">
+            <img src="images/heaven.jpg" class="cover_img" alt="" srcset="" height="300" width="350">
+        </div>
+        <div class="contents">
+            <div class="play_btn">
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="music_title">
+                <h1 class="title">Avicii</h1>
+                <h1 class="sub_title">Heaven</h1>
+            </div>
+            <div class="music_forward_backward">
+                <i class="fa fa-fast-forward" id="forward" aria-hidden="true"></i>
+                <i class="fa fa-backward" id="backward" aria-hidden="true"></i>
+            </div>
+            
+        </div>
+        <div class="duration">
+            <p class="dTime">0:00</p>
+        </div>
+      
+        <div class="progress_bar">
+            
+            <div class="progress"></div>
+        </div>
+        <div class="start_time">
+            <p class="sTime">0:00</p>
+        </div>
+    </div>
+
+    <audio class="music_name"><audio>
+
+    <script src="index.js"></script>
+</body>
+</html>

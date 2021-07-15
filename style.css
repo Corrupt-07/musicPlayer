@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main{
+    background-color: rebeccapurple;
+    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("images/heaven.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(10px);
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+.container {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  background: linear-gradient(to right, #424242 0%, #717171 100%);
+  border-radius: 20px;
+box-shadow: 2px 0px 12px 12px rgba(95,90,90,1);
+    overflow: hidden;
+}
+ 
+
+.contents {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.music_forward_backward {
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+}
+.fa-fast-forward,
+.fa-backward {
+  margin: 2px;
+}
+
+i {
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.title {
+  color: #9cba46;
+  /* font-size: 45px; */
+}
+.sub_title{
+  color: #fff;
+  /* font-size: 25px; */
+}
+
+.progress_bar{
+  /* display: flex;
+  flex-direction: row; */
+  height: 5px;
+  background-color: black;
+  width: 60%;
+  margin-left: 20%;
+  /* margin-bottom: 15px; */
+  cursor: pointer;
+}
+
+.progress{
+  /* background-color: #9cba46; */
+  background-color: black;
+  height: 5px;
+  width: 0%;
+}
+
+
+.duration,.start_time{
+  display: flex;
+  /* background-color: rebeccapurple; */
+}
+
+.duration{
+  justify-content: flex-end;
+  margin-right: 65px;
+  color: #9cba46;
+}
+
+.start_time{
+  margin-left: 65px;
+  color: #fff;
+}
